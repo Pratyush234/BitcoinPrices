@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/xdd"
+    android:paddingTop="8dp"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp">
+
+
+    <ImageView
+        android:id="@+id/BTCImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/btc" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="#000000"
+        android:text="3222.22"
+        android:gravity="center_horizontal"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        >
+        <TextView
+            android:id="@+id/baseCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="65dp"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:text="Base currency"
+            android:layout_marginLeft="60dp"/>
+        <Spinner
+            android:id="@+id/Spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:layout_marginLeft="15dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
